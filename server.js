@@ -54,7 +54,7 @@ app.get('/collectibles/:index', (req, res) => {
 // exercise 4
 app.get('/shoes', (req, res) => {
   const { 'min-price': minPrice, 'max-price': maxPrice, type } = req.query;
-
+// filter syntax from chat gbt
   let filteredShoes = shoes;
 
   if (minPrice) {
